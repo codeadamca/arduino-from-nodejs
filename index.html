@@ -1,36 +1,36 @@
 <!doctype html>
 <html>
     <head>
+
+        <title>Communicating from Node.js to an Arduino</title>
         
         <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js'></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+
+        <h1>Communicating from Node.js to an Arduino</h1>
+
+        <button id="lightOn">Turn Light On</button>
+        <button id="lightOff">Turn Light Off</button>
 
         <script>
             
-        $(document).ready(function(){
-            
-            var socket = io();
+        var socket = io();
 
-            $('#lightOn').click(function(){
-               
-                socket.emit('lights', { "status":"1" });
-                
-            });
+        document.getElementById('lightOn').onclick = function() {
             
-            $('#lightOff').click(function(){
-               
-                socket.emit('lights', { "status":"0" });
+            socket.emit('lights', { "status":"1" });
                 
-            });
+        };
             
-        });
+        document.getElementById('lightOff').onclick = function(){
+               
+            socket.emit('lights', { "status":"0" });
+            
+        };
         
         </script>
-    </head>
-    <body>
-        
-        <button id="lightOn">Turn Light On</button>
-        <button id="lightOff">Turn Light Off</button>
         
     </body>
 </html>
