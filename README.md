@@ -151,6 +151,8 @@ void loop() {
 }
 ```
 
+[View the Arduino code on Arduino Create](https://create.arduino.cc/editor/professoradam/da29d7ec-2df5-4528-82ce-817710aadb1a/preview)
+
 The previous code will listen to the serialport for an incoming message. Once a message is received, if the message is a one the light will turn on, if the message is a zero the light will turn off. 
 
 You will need to setup the following circuit using your Arduino:
