@@ -112,35 +112,26 @@ The above code uses Socket.io to listen for a message from the HTML/JavaScript w
 Using [Arduino Create](https://create.arduino.cc/editor) create the following sketch and upload it to your Arduino. 
 
 ```csharp
-// Define the port for the LED
 int lightPin = 2;
  
 void setup() 
 { 
-  // Initialize the light pin
   pinMode(lightPin, OUTPUT);
-  
-  // Initialize the Serial
   Serial.begin(9600);
 }
 
 void loop() {
   
-  // CHeck to see if Serial data is being received
   if (Serial.available() > 0) {
     
-    // Create a new string variable to receive Serial data
     String receivedString = "";
     
-    // Loop through received data and append to the receivedString variable
     while (Serial.available() > 0) {
       receivedString += char(Serial.read ());
     }
     
-    // Print received Serial data
     Serial.println(receivedString);
     
-    // Change LED status based on received data
     if(receivedString == "1")
       digitalWrite(lightPin,HIGH);  
     else
@@ -153,7 +144,7 @@ void loop() {
 
 The previous code will listen to the serialport for an incoming message. Once a message is received, if the message is a one the light will turn on, if the message is a zero the light will turn off. 
 
-[View the Arduino code on Arduino Create](https://create.arduino.cc/editor/professoradam/da29d7ec-2df5-4528-82ce-817710aadb1a/preview)
+[View the Arduino code on Arduino Create](https://create.arduino.cc/editor/professoradam/af5288bf-00cc-406c-844e-f20485fa2df8/preview)
 
 You will need to setup the following circuit using your Arduino:
 
