@@ -157,13 +157,13 @@ You will need to setup the following circuit using your Arduino:
 
 ![Tinkercad Circuit](https://raw.githubusercontent.com/codeadamca/arduino-from-nodejs/master/tinkercad-from-nodejs.png)
 
-[View the Circuit on Tinkercad](https://www.tinkercad.com/things/h0C03Xahv9R )
+[View the Circuit on Tinkercad](https://www.tinkercad.com/things/h0C03Xahv9R)
 
 ## Launch Application
 
 1. Using the Terminal start your Node.js app using `node app.js`.
-2. Opem up a browser and enter the URL `http://localhost:3000/`.
-3. Using [Arduino Create](https://create.arduino.cc/editor) upload the skecth to your Arduino.
+2. Open up a browser and enter the URL `http://localhost:3000/`.
+3. Using [Arduino Create](https://create.arduino.cc/editor) upload the sketch to your Arduino.
 4. Using your browser push the on and off buttons and watch your Arduino for a changing light. 
 
 ## Tutorial Requirements:
