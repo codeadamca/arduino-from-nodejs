@@ -9,10 +9,6 @@ const parser = new parsers.Readline({
     delimiter: '\r\n'
 });
 
-/*
-ls /dev/{tty,cu}.*
-*/
-
 var port = new SerialPort('/dev/tty.wchusbserialfa1410',{ 
     baudRate: 9600,
     dataBits: 8,
