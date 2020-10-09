@@ -166,9 +166,9 @@ You will need to setup the following circuit using your Arduino:
 
 ## Launch Application
 
-1. Using the Terminal start your Node.js app using `node app.js`.
-2. Open up a browser and enter the URL `http://localhost:3000/`.
-3. Using [Arduino Create](https://create.arduino.cc/editor) upload the sketch to your Arduino.
+1. Using [Arduino Create](https://create.arduino.cc/editor) upload the sketch to your Arduino.
+2. Using the Terminal start your Node.js app using `node app.js`.
+3. Open up a browser and enter the URL `http://localhost:3000/`.
 4. Using your browser push the on and off buttons and watch your Arduino for a changing light. 
 
 ## Tutorial Requirements:
