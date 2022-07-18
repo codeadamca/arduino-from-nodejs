@@ -1,4 +1,4 @@
-# arduino-from-nodejs
+# Communicating Between a Node.js Server and an Arduino
 
 This tutorial will walkthrough the process of creating a web interface to control an Arduino. The web interface will include an on and off button that will turn a light on and off on a USB connected Arduino. 
 
