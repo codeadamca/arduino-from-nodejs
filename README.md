@@ -162,7 +162,7 @@ The previous code will listen to the serialport for an incoming message. Once a 
 
 You will need to setup the following circuit using your Arduino:
 
-![Tinkercad Circuit](https://raw.githubusercontent.com/codeadamca/arduino-from-nodejs/master/tinkercad-from-nodejs.png)
+![Tinkercad Circuit](https://raw.githubusercontent.com/codeadamca/arduino-from-nodejs/main/_readme/tinkercad-from-nodejs.png)
 
 > [View the Circuit on Tinkercad](https://www.tinkercad.com/things/h0C03Xahv9R)
 
