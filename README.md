@@ -46,25 +46,25 @@ The above code creates a webpage with two buttons. When the buttons are clicked 
 
 Before we setup the Node.js server we need to know the name of the serialport your Arduino is attached to. You can find the name of your serialport, it will look something like `/dev/tty.wchusbserialfa1410`. On a Mac using the Terminal and entering the following command:
 
-```
+```sh
 ls /dev/{tty,cu}.*
 ```
 
 On a PC you can use the command line and the following command:
 
-```
+```sh
 chgport
 ```
 
-On my PC when I use the `chgport` command I get the following output:
+On a Windows machine the `chgport` command would result in the following:
 
-```
+```sh
 AUX = \DosDevices\COM1
 COM1 = \Device\Serial0
 COM3 = \Device\Serial2
 ```
 
-In my Node.js I would use just `COM3` as my serialport string.
+My Node.js will require the use of `COM3` as the serialport string.
 
 If you're not sure which one is your Arduino, just disconnet your Arduino and execute the cpommand again and take note of which port is no longer on the list. 
 
@@ -117,13 +117,15 @@ app.listen(3000);
 
 The above code uses Socket.io to listen for a message from the HTML/JavaScript webpage and then simply passes on the message to the connected Arduino. 
 
-> Note: Make sure to change the name of the serialport.
+> **Note**
+>
+> Make sure to change the name of the serialport.
 
 ## The Arduino
 
 Using [Arduino Create](https://create.arduino.cc/editor) create the following sketch and upload it to your Arduino. 
 
-```csharp
+```cpp
 int lightPin = 2;
  
 void setup() 
@@ -156,13 +158,13 @@ void loop() {
 
 The previous code will listen to the serialport for an incoming message. Once a message is received, if the message is a one the light will turn on, if the message is a zero the light will turn off. 
 
-[View the Arduino code on Arduino Create](https://create.arduino.cc/editor/professoradam/af5288bf-00cc-406c-844e-f20485fa2df8/preview)
+> [View the Arduino code on Arduino Create](https://create.arduino.cc/editor/professoradam/af5288bf-00cc-406c-844e-f20485fa2df8/preview)
 
 You will need to setup the following circuit using your Arduino:
 
 ![Tinkercad Circuit](https://raw.githubusercontent.com/codeadamca/arduino-from-nodejs/master/tinkercad-from-nodejs.png)
 
-[View the Circuit on Tinkercad](https://www.tinkercad.com/things/h0C03Xahv9R)
+> [View the Circuit on Tinkercad](https://www.tinkercad.com/things/h0C03Xahv9R)
 
 ## Launch Application
 
@@ -171,9 +173,11 @@ You will need to setup the following circuit using your Arduino:
 3. Open up a browser and enter the URL `http://localhost:3000/`.
 4. Using your browser push the on and off buttons and watch your Arduino for a changing light. 
 
-## Tutorial Requirements:
+***
 
-* [Visual Studio Code](https://code.visualstudio.com/) or [Brackets](http://brackets.io/) (or any code editor)
+## Repository Resources
+
+* [Visual Studio Code](https://code.visualstudio.com/) (or any code editor)
 * [Arduino Create](https://create.arduino.cc/editor) 
 * [SerialPort NPM](https://www.npmjs.com/package/serialport)
 * [Socket.io](https://socket.io/)
