@@ -175,7 +175,7 @@ You will need to setup the following circuit using your Arduino:
 
 ***
 
-## Repository Resources
+## Repo Resources
 
 * [Visual Studio Code](https://code.visualstudio.com/) (or any code editor)
 * [Arduino Create](https://create.arduino.cc/editor) 
