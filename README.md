@@ -173,6 +173,9 @@ You will need to setup the following circuit using your Arduino:
 3. Open up a browser and enter the URL `http://localhost:3000/`.
 4. Using your browser push the on and off buttons and watch your Arduino for a changing light. 
 
+> Full tutorial URL:  
+> https://codeadam.ca/learning/arduino-from-nodejs.html
+
 ***
 
 ## Repo Resources
@@ -181,8 +184,6 @@ You will need to setup the following circuit using your Arduino:
 * [Arduino Create](https://create.arduino.cc/editor) 
 * [SerialPort NPM](https://www.npmjs.com/package/serialport)
 * [Socket.io](https://socket.io/)
-
-Full tutorial URL: https://codeadam.ca/learning/arduino-from-nodejs.html
 
 <a href="https://codeadam.ca">
 <img src="https://codeadam.ca/images/code-block.png" width="100">
